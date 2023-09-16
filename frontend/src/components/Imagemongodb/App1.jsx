@@ -11,7 +11,7 @@ function App1() {
     }, []);
 
     const fetchImages = () => {
-        axios.get('http://localhost:5000/api/images')
+        axios.get('https://mern-engement-app5.onrender.com/api/images')
             .then(response => setImages(response.data))
             .catch(error => console.error("Error fetching images:", error));
     };
@@ -22,7 +22,7 @@ function App1() {
         const data = new FormData();
         data.append('image', formData.image);
 
-        axios.post('http://localhost:5000/api/upload', data)
+        axios.post('https://mern-engement-app5.onrender.com/api/upload', data)
             .then(() => fetchImages())
             .catch(error => console.error("Error uploading image:", error));
     };
