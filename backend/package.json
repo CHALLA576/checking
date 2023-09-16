@@ -20,8 +20,8 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "npm i",
-    "dev": "nodemon index.js"
+    "build": "npm install",
+    "dev": "node index.js"
 
    
   },
